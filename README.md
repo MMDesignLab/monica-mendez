@@ -1,3 +1,3 @@
 
-This project is about advertising my experience and skill set in web development.
+This website is a compilation of my skills to help advertise my knowledge in web development. 
 
