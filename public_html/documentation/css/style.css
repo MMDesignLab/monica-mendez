@@ -8,13 +8,21 @@ html, body{
 
 }
 
+
 .name {
     color: firebrick;
+}
+
+.title{
+    color: firebrick;
+    text-align: center;
+    font-family: 'rachela_claudie_demoregular', Arial, sans-serif;
 }
 
 h1, h2{
     font-weight: bold;
     font-style: italic;
+    color: firebrick;
 }
 hr{
 width: 50%;
