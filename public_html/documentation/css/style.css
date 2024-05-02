@@ -3,26 +3,26 @@ html, body{
     background: black;
     color: white;
     font-size: 16px;
-    font-family: sans-serif;
-    margin: 10px;
+    font-family: Arial, sans-serif;
+    margin: 15px;
 
 }
 
 
 .name {
     color: firebrick;
+    font-size: 40px;
+    padding-top: 50px;
+    font-style: italic;
 }
 
-.title{
-    color: firebrick;
-    text-align: center;
-    font-family: 'rachela_claudie_demoregular', Arial, sans-serif;
-}
 
 h1, h2{
+    padding-top: 2px;
     font-weight: bold;
-    font-style: italic;
     color: firebrick;
+    font-style: italic;
+
 }
 hr{
 width: 50%;
@@ -33,3 +33,7 @@ img[alt*="hummingbird logo"]{
 float: right;
 }
 
+.layout{
+    max-width: 500px;
+    max-height: 1000px;
+}
