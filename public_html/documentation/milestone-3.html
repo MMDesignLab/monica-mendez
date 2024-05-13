@@ -8,17 +8,26 @@
 </head>
 <body>
 <header>
+    <div class="banner">
+        <div class="nav">
+            <div class="topnav">
+                <a href="#a:welcome">Welcome</a>
+                <a href="#a:about-me">About Me</a>
+                <a href="#a:portfolio">Portfolio</a>
+                <a href="#a:contact-form">Contact Me</a>
+            </div>
+        </div>
+    </div>
+    <!-- The video -->
+    <video autoplay muted loop id="web-banner">
+        <source src="images/web-banner1.mp4" type="video/mp4">
+    </video>
 
 </header>
-<h1 class="name">Monica Mendez</h1>
-<br>
-
-<div class="content">
-<h2>Content Strategy</h2>
-<p>My professional portfolio website will be one page and consist of the following items.</p>
-<br>
-<h2>Welcome</h2><p>I will have one background image with a stack of photos layered across the top of my page. These images will encompass who I am as a person sharing my professional goals and personal life. It will also state my name and position desired.</p>
-<h2>About Me</h2> <p>The about me section will list my professional work history, college degree, and newly acquired skill set I was exposed to and have become proficient in during the 10-week full-stack boot camp.</p>
+<div class="main-content">
+<h2><a id="a:welcome">Welcome</a></h2><p>I will have one background image with a stack of photos layered across the top of my page. These images will encompass who I am as a person sharing my professional goals and personal life. It will also state my name and position desired.</p>
+    <br>
+    <h2 id="a:about-me">About Me</h2> <p>The about me section will list my professional work history, college degree, and newly acquired skill set I was exposed to and have become proficient in during the 10-week full-stack boot camp.</p>
     <section>
         <div class="flex flex-col md:flex-row items-center bg-gray-300 basis-1/6 flex-shrink-0 justify-center max-md:px-16">
 <!--            <img class="w-120 h-64 my-10 mx-10" src="./img/email.png" alt="envelope image"/>-->
@@ -30,9 +39,7 @@
         </div>
     </section>
 </div>
-
-
-<h2>Portfolio</h2>
+<h2 id="a:portfolio">Portfolio</h2>
 <div class="container">
     <div class="panel active" style="background-image:url('./images/Screenshot 2024-05-11 214708.png')">
     </div>
@@ -49,10 +56,12 @@
         <h3>Finance Kiosk</h3>
     </div>
 </div>
-
-<h2>Contact</h2> <p>A simple web form with text boxes for their name, phone number, email, and message that will be emailed to me when someone enters their information. I will also provide a link using icons to my GitHub repository and LinkedIn profile in the nav or footer of my page.</p>
+<h2 id="a:contact-form">Contact Me</h2> <p>A simple web form with text boxes for their name, phone number, email, and message that will be emailed to me when someone enters their information. I will also provide a link using icons to my GitHub repository and LinkedIn profile in the nav or footer of my page.</p>
 <br>
+<br>
+<footer>
+
+</footer>
 <script src="script.js"></script>
-<!--<script type="module" src="/src/main.js"></script>-->
 </body>
 </html>
