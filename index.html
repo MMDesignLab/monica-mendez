@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style2.css" type="text/css">
+    <link rel="stylesheet" href="./src/index.css" type="text/css">
     <title>PWP Milestone 3</title>
 </head>
 <body>
@@ -20,28 +20,18 @@
     </div>
     <!-- The video -->
     <video autoplay muted loop id="web-banner">
-        <source src="../../public/images/web-banner1.mp4" type="video/mp4">
+        <source src="/images/web-banner1.mp4" type="video/mp4">
     </video>
 
 </header>
 <div class="main-content">
-<h2><a id="a:welcome">Welcome</a></h2><p>I will have one background image with a stack of photos layered across the top of my page. These images will encompass who I am as a person sharing my professional goals and personal life. It will also state my name and position desired.</p>
+    <h2><a id="a:welcome">Welcome</a></h2><p>I will have one background image with a stack of photos layered across the top of my page. These images will encompass who I am as a person sharing my professional goals and personal life. It will also state my name and position desired.</p>
     <br>
     <h2 id="a:about-me">About Me</h2> <p>The about me section will list my professional work history, college degree, and newly acquired skill set I was exposed to and have become proficient in during the 10-week full-stack boot camp.</p>
-    <section>
-        <div class="flex flex-col md:flex-row items-center bg-gray-300 basis-1/6 flex-shrink-0 justify-center max-md:px-16">
-<!--            <img class="w-120 h-64 my-10 mx-10" src="./img/email.png" alt="envelope image"/>-->
-            <p class="my-10 mx-10 text-lg">TyadahkhkahkrjakjrlajrkljakrljkljkljsjTyadahkhkahkrjakjrlajrkljakrljkljkljsjTyadahkhkahkrjakjrlajrkljakrljkl
-                TyadahkhkahkrjakjrlajrkljakrljkljkljsjTyadahkhkahkrjakjrlajrkljakrljkljkljsjTyadahkhkahkrjakjrlajrkljakrljkl
-                TyadahkhkahkrjakjrlajrkljakrljkljkljsjTyadahkhkahkrjakjrlajrkljakrljkljkljsjTyadahkhkahkrjakjrlajrkljakrljklljakrljkljkljsj<br>Tyadahkhkahkrjakjrlajrkljakrljkl
-                TyadahkhkahkrjakjrlajrkljakrljkljkljsjTyadahkhkahkrjakjrlajrkljakrljkljkljsjTyadahkhkahkrjakjrlajrkljakrljklkjrlajrkljakrljkl
-                TyadahkhkahkrjakjrlajrkljakrljkljkljsjTyadahkhkahkrjakjrlajrkljakrljkljkljsjTyadahkhkahkrjakjrlajrkljakrljkl</p>
-        </div>
-    </section>
 </div>
 <h2 id="a:portfolio">Portfolio</h2>
 <div class="container">
-    <div class="panel active" style="background-image:url('../../public/images/Screenshot 2024-05-11 214708.png')">
+    <div class="panel active" style="background-image:url('/images/Screenshot 2024-05-11 214708.png')">
     </div>
     <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
         <h3>WebDev Ticketing System</h3>
@@ -59,9 +49,21 @@
 <h2 id="a:contact-form">Contact Me</h2> <p>A simple web form with text boxes for their name, phone number, email, and message that will be emailed to me when someone enters their information. I will also provide a link using icons to my GitHub repository and LinkedIn profile in the nav or footer of my page.</p>
 <br>
 <br>
-<footer>
 
+
+
+<footer class="bg-[#965D8A] shadow m-4">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <a href="#a:welcome"><img src="public/images/HummingBird.png" alt="MMDesignLab Logo" style="width:42px;height:42px;"></a>
+
+        <a href="https://www.linkedin.com/in/techiemoni/"><img src="public/images/LI-In-Bug.png" alt="HTML tutorial" style="display:flex;text-align:center;margin:0;width:42px;height:42px;"></a>
+        <a href="https://github.com/MMDesignLab?tab=repositories"><img src="public/images/github-mark-white.png" alt="HTML tutorial" style="display:flex;text-align:center;margin:0;width:42px;height:42px;"></a>
+
+        <span class="text-md text-[#f2f2f2] md:text-right">© 2023</span>
+    </div>
 </footer>
-<script src="script.js"></script>
+
+
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>
