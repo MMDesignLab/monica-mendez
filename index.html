@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    &lt;!&ndash; Link Tailwind CSS &ndash;&gt;-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="./src/index.css" type="text/css">
-    <title>PWP Milestone 3</title>
+    <title>Monica Mendez's PWP</title>
 </head>
 <body>
 <header>
-    <div class="banner">
+    <div class="banner md:max-xl-flex">
         <div class="nav">
-            <div class="topnav">
+            <div id="Home-Page-Top" class="topnav">
                 <a href="#a:welcome">Welcome</a>
                 <a href="#a:about-me">About Me</a>
                 <a href="#a:portfolio">Portfolio</a>
@@ -20,50 +22,74 @@
     </div>
     <!-- The video -->
     <video autoplay muted loop id="web-banner">
-        <source src="/images/web-banner1.mp4" type="video/mp4">
+        <source src="public/images/web-banner1.mp4" type="video/mp4">
     </video>
 
 </header>
 <div class="main-content">
-    <h2><a id="a:welcome">Welcome</a></h2><p>I will have one background image with a stack of photos layered across the top of my page. These images will encompass who I am as a person sharing my professional goals and personal life. It will also state my name and position desired.</p>
     <br>
-    <h2 id="a:about-me">About Me</h2> <p>The about me section will list my professional work history, college degree, and newly acquired skill set I was exposed to and have become proficient in during the 10-week full-stack boot camp.</p>
+    <h2><a id="a:welcome">Welcome</a><a href="#Home-Page-Top"><img id="icon1" src="public/images/arrow.png" alt="back to top arrows"></a></h2><p>I will have one background image with a stack of photos layered across the top of my page. These images will encompass who I am as a person sharing my professional goals and personal life. It will also state my name and position desired.</p>
+    <br>
+    <h2> <a id="a:about-me">About Me</a><a href="#Home-Page-Top"><img id="icon2" src="public/images/arrow.png" alt="back to top arrows"></a></h2><p>The about me section will list my professional work history, college degree, and newly acquired skill set I was exposed to and have become proficient in during the 10-week full-stack boot camp.</p><br>
 </div>
-<h2 id="a:portfolio">Portfolio</h2>
+<h2><a id="a:portfolio">Portfolio</a><a href="#Home-Page-Top"><img id="icon3" src="public/images/arrow.png" alt="back to top arrows"></a></h2>
 <div class="container">
-    <div class="panel active" style="background-image:url('/images/Screenshot 2024-05-11 214708.png')">
+    <div id="panel1" class="panel active">
     </div>
-    <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
-        <h3>WebDev Ticketing System</h3>
+    <div id="panel2" class="panel">
     </div>
-    <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80')">
-        <h3>Transportation Ticketing System</h3>
+    <div id="panel3" class="panel">
     </div>
-    <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80')">
-        <h3>Tribal Kiosk</h3>
+    <div id="panel4" class="panel">
     </div>
-    <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
-        <h3>Finance Kiosk</h3>
+    <div id="panel5" class="panel">
     </div>
 </div>
-<h2 id="a:contact-form">Contact Me</h2> <p>A simple web form with text boxes for their name, phone number, email, and message that will be emailed to me when someone enters their information. I will also provide a link using icons to my GitHub repository and LinkedIn profile in the nav or footer of my page.</p>
+
+<form class="contact-me border-solid border-2 rounded-md shadow-md border-spacing-2 border-separate flex-col">
+    <h2><a id="a:contact-form">Contact Me</a><a href="#Home-Page-Top"><img id="icon4" src="public/images/arrow.png" alt="back to top arrows"></a></h2>
+    <div>
+        <div>
+            <div class="sm:col-span-1">
+                <label for="fullname">Name</label>
+                <div class="mt-2">
+                    <input type="text" name="fullname" id="fullname" class="sm:text-sm sm:leading-6 rounded-md border-0 py-1.5 w-1/3">
+                </div>
+            </div>
+            <div class="sm:col-span-2">
+                <label for="phone-number">Phone Number</label>
+                <div class="mt-2">
+                    <input id="phone-number" name="phone-number" type="text" class="sm:text-sm sm:leading-6 rounded-md border-0 py-1.5 ">
+                </div>
+            </div>
+            <div class="sm:col-span-3">
+                <label for="email">Email address</label>
+                <div class="mt-2">
+                    <input id="email" name="email" type="email" autocomplete="email" class="sm:text-sm sm:leading-6 rounded-md border-0 py-1.5 w-1/3">
+                </div>
+            </div>
+            <div class="sm:col-span-4">
+                <label for="message">Message</label>
+                <div class="mt-2">
+                    <input id="message" name="message" type="text" class="sm:text-sm sm:leading-6 rounded-md border-0 py-1.5 w-1/3">
+                </div>
+            </div>
+        </div>
+    <div class="mt-6 flex items-center gap-x-6">
+        <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semi-bold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Submit</button>
+    </div>
+    </div>
+    <p>If you would like to contact me to schedule a consultation, please fill out the form and I will contact you to set-up an appointment. Thank you.</p>
+</form>
 <br>
-<br>
-
-
-
-<footer class="bg-[#965D8A] shadow m-4">
+<footer>
     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <a href="#a:welcome"><img src="public/images/HummingBird.png" alt="MMDesignLab Logo" style="width:42px;height:42px;"></a>
-
-        <a href="https://www.linkedin.com/in/techiemoni/"><img src="public/images/LI-In-Bug.png" alt="HTML tutorial" style="display:flex;text-align:center;margin:0;width:42px;height:42px;"></a>
-        <a href="https://github.com/MMDesignLab?tab=repositories"><img src="public/images/github-mark-white.png" alt="HTML tutorial" style="display:flex;text-align:center;margin:0;width:42px;height:42px;"></a>
-
+        <a id="backtotop" href="#Home-Page-Top"><img id="monilogo" src="public/images/HummingBird.png" alt="MMDesignLab Logo"></a>
+        <a href="https://www.linkedin.com/in/techiemoni/"><img id="linkedin" src="public/images/LI-In-Bug.png" alt="HTML tutorial"></a>
+        <a href="https://github.com/MMDesignLab?tab=repositories"><img id="github" src="public/images/github-mark-white.png" alt="HTML tutorial"></a>
         <span class="text-md text-[#f2f2f2] md:text-right">© 2023</span>
     </div>
 </footer>
-
-
 <script type="module" src="/src/main.js"></script>
 </body>
 </html>

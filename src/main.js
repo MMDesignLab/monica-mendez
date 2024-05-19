@@ -1,7 +1,6 @@
 import './index.css'
 import 'flowbite'
 
-
 const panels = document.querySelectorAll('.panel')
 
 panels.forEach(panel => {
