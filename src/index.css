@@ -23,8 +23,9 @@ body{
 
 /*navigation bar*/
 .topnav{
+    border-radius: 3px;
     overflow: hidden;
-    background-color: #965D8A;
+    background-color: #99516E;
 }
 
 /*navigation links*/
@@ -56,8 +57,8 @@ body{
 /*}*/
 
 video{
-    border-radius: 7px;
-    filter: brightness(80%);
+    /*border-radius: 3px;*/
+    filter: brightness(75%);
 }
 
 .panel{
@@ -130,17 +131,12 @@ video{
 }
 
 .contact-me{
-    border: #245C6B;
-    text: white;
-    padding: 25px 50px 75px 100px;
-    background-color:#245C6B;
+    text: black;
+    padding: 60px 30px 30px 60px;
+    background-color:#bfbeb2;
     display: flex;
 }
 
-.footer{
-    background-color: #965D8A;
-    padding-bottom: 0;
-}
 
 
 #linkedin{
