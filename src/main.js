@@ -1,7 +1,5 @@
-import './index.css'
-import 'flowbite'
-
-const panels = document.querySelectorAll('.panel')
+let panels;
+panels = document.querySelectorAll('.panel');
 
 panels.forEach(panel => {
     panel.addEventListener('click', () => {
