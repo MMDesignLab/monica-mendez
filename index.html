@@ -25,18 +25,18 @@
 </header>
 <div class="about-me">
     <br>
-    <h2><a id="a:about-me" class="text-2xl font-bold ml-4">About Me</a><a href="#Home-Page-Top"><img id="icon1" src="./public/images/arrow.png" alt="back to top arrows"></a></h2>
-    <div class="md:flex md:flex-row flex-col">
+    <h2><a id="a:about-me" class="text-2xl font-bold">About Me</a><a href="#Home-Page-Top"><img id="icon1" src="./public/images/arrow.png" alt="back to top arrows"></a></h2>
+    <div class="md:flex md:flex-row flex-col space-x-10">
         <!-- Left Column -->
         <div class="md:w-1/2">
             <!-- First Article Panel -->
-            <div class="p-4">
+            <div>
                 <!-- Content for first article -->
-                <div class="text-lg space-y-3 text-left">
+                <div class="mx-auto text-lg space-y-5 mb-4">
                     <p>I'm an experienced IT professional with a background in Web Development and SQL Administration. My journey in technology began with a passion for solving problems and building innovative solutions.</p>
-                    <p>Driven by a commitment to continuous learning, I recently completed a full-stack boot camp to stay current with evolving technologies. Through immersive projects and collaboration with peers, I've solidified my proficiency in modern web development frameworks and methodologies.</p>
-                    <p>Outside of my professional endeavors, I'm actively involved in volunteer work within my community. I believe in giving back and making a positive impact wherever I can. When I'm not working or volunteering, you can find me enjoying quality time with family and friends or signing up for triathlons.</p>
- <p>My journey is not just about achieving professional success but also about personal growth and development. I thrive on challenges, whether it's overcoming fears in triathlons or pushing myself to learn new technologies. I'm excited about the opportunities ahead and look forward to making meaningful contributions to the tech industry.</p>
+                    <p>Driven by a commitment to continuous learning, I recently completed a full-stack boot camp to stay current with evolving technologies. Through immersive ongoing projects and collaboration with peers, I am solidifying my proficiency in modern web development frameworks and methodologies.</p>
+                    <p>My journey is not just about achieving professional success, but also about personal growth and development. I thrive on challenges. In 2021, I participated in my first sprint triathlon without knowing how to swim! Although I was afraid, I did not let fear stop me. I jumped into the lake and swam the 1/3 mile. After not drowning or DNF'ing, I got the fever to keep going and training. I am currently prepping for an Iron Man 70.3 in 2025. </p>
+ <p>I'm also dedicated to giving back to my community by volunteering at local charities and organizations. Most recently I've volunteered to assist 2 small business owners with their websites. When I'm not working or volunteering, you can find me enjoying quality time with family and friends.</p>
                                     </div>
                                 </div>
                             </div>
@@ -44,8 +44,8 @@
         <div class="md:w-1/2">
             <!-- Second Content Block -->
             <div class="mb-4">
-                <h2 class="text-xl font-bold">College Degree:</h2>
-                <ul class="list-disc text-lg ml-10 space-y-3">
+                <h2 class="text-xl font-bold space-x-20">College Degree:</h2>
+                <ul class="list-disc text-lg ml-10 space-y-1">
                     <li>Associate of Applied Science (AAS) in Database Management</li>
                     <li>South Puget Sound Community College</li>
                     <li>2011-2013</li>
@@ -53,7 +53,7 @@
             </div>
             <!-- Third Content Block -->
             <div class="mb-4">
-                <h2 class="text-xl font-bold">CNM's Full-Stack Boot Camp:</h2>
+                <h2 class="text-xl font-bold">CNM's Deep Dive Bootcamp:</h2>
                 <ul class="list-disc text-lg ml-10 space-y-3">
                     <li>Participated in an immersive curriculum covering cutting-edge web development technologies, including:</li>
                 </ul>
@@ -85,33 +85,16 @@
     <div id="panel5" class="panel">
     </div>
 </div>
-<form class="contact-me text-white border-solid border-3 rounded-md flex-col">
+<form class="contact-me mt-5 p-8 flex flex-col gap-5 items-center justify-content-center bg-[#624E6A]">
     <h2><a id="a:contact-form" class="text-2xl font-bold mb-4">Contact Me</a><a href="#Home-Page-Top"><img id="icon3" class="" src="./public/images/arrow.png" alt="back to top arrows"></a></h2>
-    <div>
-        <div>
             <p class="mb-4">If you would like to contact me to schedule a consultation, please fill out the form below. Thank you.</p>
-            <div>
-                <label for="fullname" class="block">Name</label>
-                <input type="text" name="fullname" id="fullname" class="sm:text-sm sm:leading-6 rounded-md border-0 py-1.5 w-full mb-4">
-            </div>
-            <div>
-                <label for="phone-number" class="block">Phone Number</label>
-                <input id="phone-number" name="phone-number" type="text" class="sm:text-sm sm:leading-6 rounded-md border-0 py-2 w-full mb-4">
-            </div>
-            <div>
-                <label for="email" class="block">Email address</label>
-                <input id="email" name="email" type="email" autocomplete="email" class="sm:text-sm sm:leading-6 rounded-md border-0 py-1.5 w-full mb-4">
-            </div>
-            <div>
-                <label for="message" class="block">Message</label>
-                <textarea id="message" name="message" rows="4" maxlength="500" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md resize-none mb-4"></textarea>
-                <p class="mt-2 text-sm text-white">Max 500 characters</p>
-            </div>
-        </div>
+                <input class="p-2 sm:w-1/2 rounded-sm" type="text" placeholder="Fullname">
+                <input class="p-2 sm:w-1/2  rounded-sm" placeholder="Phone Number"  type="text">
+                <input class="p-2 sm:w-1/2  rounded-sm" placeholder="Email Address" type="text">
+                <textarea class="p-2 sm:w-1/2  rounded-sm" placeholder="Message" rows="4" maxlength="500"></textarea>
         <div class="flex justify-center mt-6"> <!-- This div centers its children horizontally -->
-            <button type="submit" class="rounded-md bg-gray-700 py-2 px-3  text-sm font-semi-bold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Submit</button>
+            <button type="submit" class="rounded-md bg-gray-700 py-2 px-3 text-sm font-semi-bold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Submit</button>
         </div>
-    </div>
 </form>
 <br>
 <footer class="bottom bg-[#99516E] bottom-0 relative">
@@ -121,6 +104,6 @@
         <span class="text-md text-[#f2f2f2] md:text-right">© 2023</span>
     </div>
 </footer>
-<script src="/src/main.js"></script>
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>

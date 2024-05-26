@@ -42,7 +42,7 @@ body{
 
 video{
     /*border-radius: 3px;*/
-    filter: brightness(75%);
+    filter: brightness(60%);
 }
 
 
@@ -65,14 +65,14 @@ video{
     -webkit-transition: all 700ms ease-in;
 }
 
-.panel h3 {
-    font-size: 30px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    margin: 0;
-    opacity: 0;
-}
+/*.panel h3 {*/
+/*    font-size: 30px;*/
+/*    position: absolute;*/
+/*    bottom: 20px;*/
+/*    left: 20px;*/
+/*    margin: 0;*/
+/*    opacity: 0;*/
+/*}*/
 
 .panel.active {
     flex: 5;
@@ -120,14 +120,6 @@ video{
     height:48px;
 }
 
-.contact-me{
-    background-color:#624E6A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 15px;
-}
-
 #linkedin{
     text-align:center;
     margin:0;
@@ -141,12 +133,6 @@ video{
     width:42px;
     height:42px;
 }
-
-#monilogo{
-    width:42px;
-    height:42px;
-}
-
 .bottom a:hover{
     background-color:lightgray;
     width: 48px;
