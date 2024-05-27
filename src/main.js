@@ -1,3 +1,5 @@
+import 'flowbite';
+
 let panels;
 panels = document.querySelectorAll('.panel');
 
@@ -13,3 +15,12 @@ function removeActiveClasses() {
         panel.classList.remove('active')
     })
 }
+
+
+document.getElementById('toggle').addEventListener('change', function () {
+    if (this.checked) {
+        document.documentElement.classList.add('dark')
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+})
