@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+          crossorigin="anonymous"/>
     <link rel="stylesheet" href="./src/index.css" type="text/css">
     <title>Monica Mendez's PWP</title>
 </head>
 <body>
+<header>
       <nav>
           <div id="Home-Page-Top"></div>
           <!--hamburger button-->
@@ -17,15 +22,11 @@
                   <span class="hamburger-bottom"></span>
               </button>
           </div>
-
-
-
-              <div class="topnav hidden h-12 md:flex md:space-x-8">
+              <div class="topnav hidden h-14 md:flex md:space-x-8">
               <div class="group">
               <a href="#a:about-me">About Me</a>
                   <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
               </div>
-
               <div class="group">
                   <a href="#a:portfolio">Portfolio</a>
                   <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
@@ -40,6 +41,7 @@
               <source src="public/images/web-banner1.mp4" type="video/mp4">
           </video>
 </nav>
+     </header>
       <!--mobile menu-->
       <div id="menu" class="absolute top-0 left-0 hidden flex-col self-end
          w-auto min-h-auto pr-10 py-20 pt-20 pl-12 space-y-3 text-lg text-white
@@ -54,7 +56,7 @@
     <h2><a id="a:about-me" class="text-2xl font-bold">About Me</a><a href="#Home-Page-Top"><img id="icon1" src="./public/images/arrow.png" alt="back to top arrows"></a></h2>
     <div class="md:flex md:flex-row flex-col justify-center">
         <!-- Left Column -->
-        <div class="md:w-2/3">
+        <div class="md:w-2/3 md:mr-4">
             <!-- First Article Panel -->
             <div>
                 <!-- Content for first article -->
@@ -67,10 +69,10 @@
                                 </div>
                             </div>
                             <!-- Right Column -->
-        <div class="md:w-1/3">
+        <div class="md:w-1/3 md:ml-auto">
             <!-- Second Content Block -->
             <div class="mb-4">
-                <h2 class="text-xl font-bold space-x-20">College Degree:</h2>
+                <h2 class="text-xl font-bold">College Degree:</h2>
                 <ul class="list-disc text-lg ml-10 space-y-1">
                     <li>Associate of Applied Science (AAS) in Database Management</li>
                     <li>South Puget Sound Community College</li>
@@ -79,10 +81,8 @@
             </div>
             <!-- Third Content Block -->
             <div class="mb-4">
-                <h2 class="text-xl font-bold">CNM's Deep Dive Bootcamp:</h2>
-                <ul class="list-disc text-lg ml-10 space-y-3">
-                    <li>Participated in an immersive curriculum covering cutting-edge web development technologies, including:</li>
-                </ul>
+                <h2 class="text-xl font-bold">CNM's Deep Dive Bootcamp</h2>
+                <p>Cutting-edge web development technologies, including:</p>
                 <ul class="list-disc text-lg ml-20">
                     <li>JavaScript</li>
                     <li>React</li>
@@ -98,20 +98,58 @@
         </div>
     </div>
 </div>
-<h2><a id="a:portfolio" class="text-2xl font-bold mb-4">Portfolio</a><a href="#Home-Page-Top"><img id="icon2" src="public/images/arrow.png" alt="back to top arrows"></a></h2>
-<div class="panel-container">
-    <div id="panel1" class="panel active">
-    </div>
-    <div id="panel2" class="panel">
-    </div>
-    <div id="panel3" class="panel">
-    </div>
-    <div id="panel4" class="panel">
-    </div>
-    <div id="panel5" class="panel">
-    </div>
+<h2><a id="a:portfolio" class="text-2xl font-bold mb-10">Portfolio</a><a href="#Home-Page-Top"><img id="icon2" src="public/images/arrow.png" alt="back to top arrows"></a></h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <a href="#" class="flex flex-col md:flex-row gap-4 mb-20 items-center bg-red-400/50 border border-gray-700 rounded-lg shadow hover:bg-rose-500/50 hover:-rotate-12 transition-transform duration-1000">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg ml-10" src="public/images/NIT2.jpg" alt="nisqually website image">
+        <div class="order-3 p-26 justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">Nisqually Indian Tribe</h5>
+            <h2 class="mb-3 font-normal text-black">Government & Community Website</h2>
+            <h2 class="mb-3 font-bold text-black">Technology Used:</h2>
+            <ul class="list-disc text-lg ml-10 space-y-1">
+                <li class="mb-2 text-black">Ubuntu Server</li>
+                <li class="mb-2 text-black">Concrete CMS</li>
+                <li class="mb-2 text-black">LAMP - Linux, Apache, MySQL, PHP</li>
+            </ul>
+        </div>
+    </a>
+    <a href="#" class="flex flex-col md:flex-row gap-4 mb-20 items-center bg-gray-400/50 border border-gray-700 rounded-lg shadow hover:bg-emerald-900 hover:rotate-12 transition-transform duration-1000">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg ml-10" src="public/images/webdev.jpg" alt="web department ticketing system image">
+        <div class="order-3 p-26 justify-between p-4 leading-normal">
+            <h5 class="mmb-2 text-xl font-bold tracking-tight text-black">Web Dept. Ticketing System</h5>
+            <h2 class="mb-3 font-normal text-black"></h2>
+            <h2 class="mb-3 font-bold text-black">Technology Used:</h2>
+            <ul class="list-disc text-lg ml-10 space-y-1">
+                <li class="mb-2 text-black">SharePoint Foundations 2010</li>
+                <li class="mb-2 text-black">Photoshop CS6</li>
+            </ul>
+        </div>
+    </a>
+    <a href="#" class="flex flex-col md:flex-row gap-4 mb-20 items-center bg-orange-600/50 border border-gray-700 rounded-lg shadow hover:bg-purple-700/50 hover:-rotate-12 transition-transform duration-1000">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg ml-10" src="public/images/Transportation.png" alt="transportation intake form image">
+        <div class="order-3 p-26 justify-between p-4 leading-normal">
+            <h5 class="mmb-2 text-xl font-bold tracking-tight text-black">Transportation Program</h5>
+            <h2 class="mb-3 font-normal text-black"></h2>
+            <h2 class="mb-3 font-bold text-black">Technology Used:</h2>
+            <ul class="list-disc text-lg ml-10 space-y-1">
+                <li class="mb-2 text-black">SharePoint Foundations 2010</li>
+                <li class="mb-2 text-black">Photoshop CS6</li>
+            </ul>
+        </div>
+    </a>
+    <a href="#" class="flex flex-col md:flex-row gap-4 mb-20 items-center bg-yellow-200/50 border border-gray-700 rounded-lg shadow hover:bg-blue-700/50 hover:rotate-12 transition-transform duration-1000">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg ml-10" src="public/images/Transit.jpg" alt="transportation ride totals image">
+        <div class="order-3 p-26 justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">Transportation</h5>
+            <h2 class="mb-3 font-bold text-black">Technology Used:</h2>
+            <ul class="list-disc text-lg ml-10 space-y-1">
+                <li class="mb-2 text-black">SharePoint Foundations 2010</li>
+                <li class="mb-2 text-black">Photoshop CS6</li>
+            </ul>
+        </div>
+    </a>
 </div>
-<form class="contact-form mx-auto text-black mt-5 p-8 flex flex-col gap-5 items-start justify-center shadow-xl shadow-gray-700/50 w-full sm:w-96 bg-[#cccbbe] rounded-md" action="/submit-form" method="POST">
+<form class="contact-form mx-auto text-black mt-10 p-6 flex flex-col gap-5 items-start justify-center shadow-xl shadow-gray-700/50 w-full sm:w-96 bg-[#cccbbe] rounded-md" action="/submit-form" method="POST">
     <h2><a id="a:contact-form" class="text-2xl font-bold mb-4">Contact Me</a><a href="#Home-Page-Top"><img id="icon3" class="filter invert" src="./public/images/arrow.png" alt="back to top arrows"></a></h2>
     <p class="mb-4">If you would like to contact me to schedule a consultation, please fill out the form below. Thank you.</p>
     <label for="fullname" class="w-full">
@@ -132,7 +170,7 @@
 </form>
 <br>
 <footer class="bottom bg-[#624E6A] bottom-0 relative">
-    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+    <div class="w-full mx-auto max-w-screen-xl p-6 md:flex md:items-center md:justify-between">
         <a href="https://www.linkedin.com/in/techiemoni/"><img id="linkedin" src="public/images/LI-In-Bug.png" alt="HTML tutorial"></a>
         <a href="https://github.com/MMDesignLab?tab=repositories"><img id="github" src="public/images/github-mark-white.png" alt="HTML tutorial"></a>
         <span class="text-md text-[#f2f2f2] md:text-right">© 2023</span>
