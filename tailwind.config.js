@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['index.html', './src/**/*.{js,css}',  "./node_modules/flowbite/**/*.js"],
+  content: ['index.html', 'thankyou.html', './src/**/*.{js,css}',  "./node_modules/flowbite/**/*.js"],
   theme: {
     screens: {
       sm:'480px',
