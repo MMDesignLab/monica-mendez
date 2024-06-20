@@ -50,9 +50,10 @@
           <a href="#a:portfolio" class="hover:text-pink-500">Portfolio</a>
           <a href="#" id="contact-link" class="hover:text-pink-500">Contact Me</a>
       </div>
-<br>
+
 <div class="about-me=">
-    <h2 class="flex-col"><a id="a:about-me" class="text-2xl font-bold">About Me</a><a href="#Home-Page-Top"><img id="icon1" src="./public/images/arrow.png" alt="back to top arrows"></a></h2>
+    <br>
+    <h2><a id="a:about-me" class="text-2xl font-bold">About Me</a><a href="#Home-Page-Top"><img id="icon1" src="./public/images/arrow.png" alt="back to top arrows"></a></h2>
     <div class="md:flex md:flex-row flex-col justify-center">
         <!-- Left Column -->
         <div class="md:w-2/3 md:mr-4">
@@ -97,81 +98,67 @@
         </div>
     </div>
 </div>
-<br>
-<br>
-<h2><a id="a:portfolio" class="text-2xl font-bold">Portfolio<a href="#Home-Page-Top"><img id="icon2" src="./public/images/arrow.png" alt="back to top arrows"></a></a></h2>
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 border-gray-800">
-    <!-- Project 1: Nisqually Indian Tribe Government Website -->
-    <div class="shadow-md rounded-md p-6 bg-[#957f9e]">
-        <h2 class="text-2xl font-bold text-gray-800 mb-2">Nisqually Indian Tribe Government Website</h2><br>
-        <p class="text-gray-800 mb-4 text-16 ">Built a website to meet the evolving needs of the tribal government and the tribal community. Despite monthly newsletters, critical updates frequently went unnoticed, highlighting the need for more efficient dissemination of information.</p>
-        <a href="https://www.nisqually-nsn.gov/" target="_blank" class="bg-gray-300 text-black px-4 py-2 rounded-md hover:bg-gray-300/85 float-right">View Website</a>
-    </div>
-    <!-- Project 2: Nisqually: Web Department's Ticketing Support System -->
-    <div class="shadow-md rounded-md p-6 bg-[#957f9e]">
-        <h2 class="text-2xl font-bold text-gray-800 mb-2">Nisqually: Web Department's Ticketing Support System</h2><br>
-        <p class="text-gray-800 mb-4 text-md">Migrated from manual request methods—paper flyers, emails, and phone calls—to an automated web form system, enhancing request tracking, workload assessment, and operational efficiency.</p>
-        <div class="webdev">
-            <button class="bg-gray-300 text-black hover:bg-gray-300/85 px-4 py-2 rounded-md float-right" onclick="toggleModal('webdevModal')">View here</button>
-            <div id="webdevModal" class="modal hidden bg-gray-900 bg-opacity-50 fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50">
-                <div class="bg-white shadow-md rounded-lg p-6 max-w-lg">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-2">WebDev Support Form</h2>
-                    <img src="/images/webdev.jpg" alt="Web Form" class="mt-4 mx-auto max-w-full">
-                    <button class="bg-gray-300 text-black hover:bg-gray-400/65 px-4 py-2 rounded-md mt-4 float-right align-bottom" onclick="toggleModal('webdevModal')">Close</button>
-                </div>
-            </div>
+
+<div class="bg-white shadow-md rounded-lg p-6 m-4">
+    <h2 class="text-2xl font-bold text-gray-800 mb-2">Nisqually Indian Tribe Government Website</h2>
+    <p class="text-gray-600 mb-4">The Tribal Website, inadequate for the tribe's evolving requirements, necessitated a comprehensive update for enhanced functionality. Despite monthly newsletters, critical updates frequently went unnoticed, highlighting the need for a more efficient information dissemination platform.</p>
+    <p class="text-gray-600 mb-4">Designed and created Nisqually Government’s website to meet the business rules and needs we were given. Created storyboard and wireframes for each page layout.</p>
+    <p class="text-gray-600 mb-4">Technologies used: Ubuntu, Concrete5, Linux, Apache, MySQL, and PHP.</p>
+    <div class="flex justify-between items-center">
+        <a href="#" class="text-blue-600 hover:underline">View Website</a>
+        <div class="flex space-x-2">
+            <a href="#" class="text-gray-600 hover:text-gray-800">
+                <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3 14h-6v-2h6v2zm0-4h-6V7h6v5z"/>
+                </svg>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-800">
+                <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14H6v-2h7v-3l5 4-5 4v-3z"/>
+                </svg>
+            </a>
         </div>
     </div>
-    <!-- Project 3: Nisqually: Transportation Department's App -->
-    <div class="shadow-md rounded-md p-6 bg-[#957f9e]">
-        <h2 class="text-2xl font-bold text-gray-800 mb-2">Nisqually: Transportation Department's App</h2><br>
-        <p class="text-gray-800 mb-4 text-md">Designed an application that provided a website link to a form for passengers to fill out to submit their request. The submitted webform was then emailed to the dispatched bus driver for scheduling. </p>
-        <div class="transportation">
-            <button class="bg-gray-300 text-black hover:bg-gray-300/85 px-4 py-2 rounded-md float-right" onclick="toggleModal('transportationModal')">View here</button>
-            <div id="transportationModal" class="modal hidden bg-gray-900 bg-opacity-50 fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50">
-                <div class="bg-white shadow-md rounded-lg p-6 max-w-lg">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Passenger Intake Form</h2>
-                    <img src="/images/transportation2.jpg" alt="Transportation Form" class="mt-4 mx-auto max-w-full h-auto">
-                    <button class="bg-gray-300 text-black hover:bg-gray-400/65 px-4 py-2 rounded-md mt-4 float-right" onclick="toggleModal('transportationModal')">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Project 4: Nisqually: Transportation Tracking App -->
-    <div class="shadow-md rounded-md p-6 bg-[#957f9e]">
-        <h2 class="text-2xl font-bold text-gray-800 mb-2">Nisqually: Transportation Tracking App</h2><br>
-        <p class="text-gray-800 mb-4 text-md">Developed an app to replace manual paper records to help keep accurate tracking of the number of passengers, buses, rides, and daily trip count per driver, while incorporating their existing transportation policy and grant requirements.</p>
-        <div class="transit">
-            <button class="bg-gray-300 text-black hover:bg-gray-300/85 px-4 py-2 rounded-md float-right" onclick="toggleModal('transitModal')">View here</button>
-            <div id="transitModal" class="modal hidden bg-gray-900 bg-opacity-50 fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50">
-                <div class="bg-white shadow-md rounded-lg p-6 max-w-lg">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Transportation Tracking</h2>
-                    <img src="/images/Transit.jpg" alt="Transit Form" class="mt-4 mx-auto max-w-full h-auto">
-                    <button class="bg-gray-300 text-black hover:bg-gray-400/65 px-4 py-2 rounded-md mt-4 float-right" onclick="toggleModal('transitModal')">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Project 5: Prompt-Me.net (capstone project) -->
-    <div class="shadow-md rounded-md p-6 bg-[#957f9e]">
-        <h2 class="text-2xl font-bold text-gray-800 mb-2">Prompt-Me.net<br>(CNM's Deep Dive Capstone)</h2><br>
-        <p class="text-gray-800 mb-4 text-md">As a team, we created a social media website that provides writing prompts. Prompt-Me aims to alleviate writer's block by offering daily prompts designed to inspire and assist users when making posts. Each day, we provide six unique prompts across various categories rendered by AI, empowering users to overcome creative hurdles and seamlessly generate engaging content.</p>
-        <!-- Add a button for this project -->
-<!--        <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 float-right">View Details</button>-->
-    </div>
-    <!-- Project 6: Coming Soon -->
-    <a href="#" class="text-2xl font-bold text-white place-content-evenly hover:text-black" onclick="toggleModal('upcomingModal'); return false;">Click to see more...</a>
-            <div id="upcomingModal" class="modal hidden bg-gray-900 bg-opacity-50 fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50">
-                <div class="bg-white shadow-md rounded-lg p-6 max-w-lg">
-                    <video id="upcoming" autoplay muted loop class="mt-4 mx-auto w-2/3 md:h-auto">
-                        <source src="public/images/upcoming.mp4" type="video/mp4">
-                    </video>
-                    <button class="bg-gray-300 text-black hover:bg-gray-400/65 px-4 py-2 rounded-md mt-4 float-right" onclick="toggleModal('upcomingModal')">Close</button>
-                </div>
-        </div>
 </div>
-<br>
-<br>
+<div class="bg-white shadow-md rounded-lg p-6 m-4">
+    <h2 class="text-2xl font-bold text-gray-800 mb-2">WebDev Ticketing System for Nisqually Tribe</h2>
+    <p class="text-gray-600 mb-4">Migrated from manual request methods—paper flyers, emails, and phone calls—to an automated web form system, enhancing request tracking, workload assessment, and operational efficiency.</p>
+    <p class="text-gray-600 mb-4">Developed workflows based on six months of request data, aligning with business needs and policies. Designed processes and attended managers' meetings to provide training on the new process and walkthrough training for all admin personnel responsible for submissions.</p>
+    <p class="text-gray-600 mb-4">Technologies used: SharePoint Foundations and Photoshop.</p>
+    <div class="flex justify-between items-center">
+        <a href="www.nisqually-nsn.gov/" class="text-blue-600 hover:underline">View Website</a>
+        <!-- Add social icons if needed -->
+    </div>
+</div>
+<div class="bg-white shadow-md rounded-lg p-6 m-4">
+    <h2 class="text-2xl font-bold text-gray-800 mb-2">Transportation Ride-Intake Form for Nisqually Tribe</h2>
+    <p class="text-gray-600 mb-4">Developed an app to automate rider tracking for grants, replacing manual paper records from bus drivers, and incorporating metrics and "no-show" tracking as per agreements.</p>
+    <p class="text-gray-600 mb-4">Engineered an online web form aligned with tribal community procedures, streamlining ride requests via driver notification emails. Established a tallies page for comprehensive ride tracking, enabling departmental oversight of daily, weekly, and monthly driver activity.</p>
+    <p class="text-gray-600 mb-4">Technologies used: SharePoint Foundations and Photoshop.</p>
+    <div class="flex justify-between items-center">
+        <a href="#" class="text-blue-600 hover:underline">View Project</a>
+        <!-- Add social icons if needed -->
+    </div>
+</div>
+<div class="bg-white shadow-md rounded-lg p-6 m-4">
+    <h2 class="text-2xl font-bold text-gray-800 mb-2">Deep Dive Coding - CNM Ingenuity</h2>
+    <p class="text-gray-600 mb-4">Dedicated 50 hours per week to reading/writing code, attending lectures, and studying industry standards.</p>
+    <p class="text-gray-600 mb-4">Collaborated with team members on-site for three days and virtually for two days weekly to develop secure applications. Managed all application version control remotely using Git and Github.</p>
+    <div class="flex justify-between items-center">
+        <a href="#" class="text-blue-600 hover:underline">View Details</a>
+        <!-- Add social icons if needed -->
+    </div>
+</div>
+<div class="bg-white shadow-md rounded-lg p-6 m-4">
+    <h2 class="text-2xl font-bold text-gray-800 mb-2">Prompt-Me.net (capstone project)</h2>
+    <p class="text-gray-600 mb-4">Created a social media site with six daily prompts across categories, allowing unlimited posts, cross-platform sharing, liking, and following.</p>
+    <p class="text-gray-600 mb-4">Created Personas, User Cases, and Wireframes using Balsamiq for design layout. Designed database ERDs and built out the database using PostgreSQL. Backend technology used Rest APIs, Express, and Next.js.</p>
+    <div class="flex justify-between items-center">
+        <a href="#" class="text-blue-600 hover:underline">View Project</a>
+        <!-- Add social icons if needed -->
+    </div>
+</div>
+
 <form id="contact-form" action="https://formsubmit.co/techiemonica@gmail.com" method="POST" class="contact-form mx-auto text-black mt-10 p-6 flex flex-col gap-5 items-start justify-center shadow-xl shadow-gray-700/50 w-full sm:w-96 bg-[#cccbbe] rounded-md hidden">
     <h2><a id="a:contact-me" class="text-2xl font-bold mb-4">Contact Me</a><a href="#Home-Page-Top"><img id="icon3" class="filter invert" src="./public/images/arrow.png" alt="back to top arrows"></a></h2>
     <p class="mb-4">If you would like to contact me to schedule a consultation, please fill out the form below. Thank you.</p>
@@ -194,14 +181,17 @@
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://www.webdevtechie.com/thankyou.html">
 </form>
+
+
 <br>
-<footer class="bottom bg-[#cccbbe] rounded-md text-black">
+<footer class="bottom bg-[#624E6A] bottom-0 relative">
     <div class="w-full mx-auto max-w-screen-xl p-6 md:flex md:items-center md:justify-between">
-        <a href="https://www.linkedin.com/in/techiemoni/" target="_blank"><img id="linkedin" src="public/images/LI-In-Bug.png" alt="HTML tutorial"></a>
-        <a href="https://github.com/MMDesignLab?tab=repositories" target="_blank"><img id="github" class="filter invert"  src="public/images/github-mark-white.png" alt="HTML tutorial"></a>
-        <span class="text-lg text-black-bold md:text-right">© 2024</span>
+        <a href="https://www.linkedin.com/in/techiemoni/"><img id="linkedin" src="public/images/LI-In-Bug.png" alt="HTML tutorial"></a>
+        <a href="https://github.com/MMDesignLab?tab=repositories"><img id="github" src="public/images/github-mark-white.png" alt="HTML tutorial"></a>
+        <span class="text-lg text-[#f2f2f2] md:text-right">© 2024</span>
     </div>
 </footer>
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const contactLink = document.getElementById('contact-link');
@@ -231,6 +221,6 @@
         });
     });
 </script>
-<script src="/src/main.js"></script>
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>
